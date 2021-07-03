@@ -36,5 +36,5 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            adolfombarros/rotten-potatoes:latest
-            adolfombarros/rotten-potatoes:${{ github.run_number }}
+            adolfombarros/api-produto:latest
+            adolfombarros/api-produto:${{ github.run_number }}
