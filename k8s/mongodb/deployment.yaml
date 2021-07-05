@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongodb
+  name: mongodb-api
 spec:
   selector:
     matchLabels:
-      app: mongodb
+      app: mongodb-api
   template:
     metadata:
       labels:
-        app: mongodb
+        app: mongodb-api
     spec:
       containers:
-      - name: mongodb
+      - name: mongodb-api
         image: mongo:4.4.6
         ports:
         - containerPort: 27017
